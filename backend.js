@@ -5,6 +5,8 @@
 })();
 */
 
+const port = process.env.PORT || 8080;
+
 var httpProxy = require('http-proxy');
 // Error example
 //
@@ -14,7 +16,7 @@ var proxy = httpProxy.createServer({
   target:'http://85.214.229.48:8080'
 });
 
-proxy.listen(80);
+proxy.listen(port);
 
 //
 // Listen for the `error` event on `proxy`.
