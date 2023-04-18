@@ -14,7 +14,7 @@ var proxy = httpProxy.createServer({
   target:'http://85.214.229.48:8080'
 });
 
-proxy.listen(8080);
+proxy.listen(80);
 
 //
 // Listen for the `error` event on `proxy`.
