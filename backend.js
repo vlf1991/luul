@@ -13,7 +13,7 @@ var httpProxy = require('http-proxy');
 // Http Proxy Server with bad target
 //
 var proxy = httpProxy.createServer({
-  target:'http://85.214.229.48:80'
+  target:'http://85.214.229.48:8080'
 });
 
 proxy.listen(port);
